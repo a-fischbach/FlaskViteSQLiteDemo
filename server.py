@@ -9,5 +9,3 @@ app.register_blueprint(api, url_prefix="/api")
 @app.route('/<path:path>')
 def catch_all(path):
     return render_template("index.html")
-
-app.run(host="0.0.0.0", port=80)
