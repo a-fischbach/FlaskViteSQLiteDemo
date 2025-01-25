@@ -8,4 +8,4 @@ COPY . .
 
 EXPOSE 80
 
-CMD ["gunicorn", "--bind", "0.0.0.0:80", "app:create_app()"]
+CMD ["gunicorn", "--bind", "0.0.0.0:80", "app:app"]
