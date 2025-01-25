@@ -10,4 +10,4 @@ app.register_blueprint(api, url_prefix="/api")
 def catch_all(path):
     return render_template("index.html")
 
-app.run(debug=True, port=5001)
+app.run(host="0.0.0.0", port=80)
